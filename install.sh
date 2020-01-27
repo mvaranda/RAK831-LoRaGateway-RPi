@@ -41,15 +41,15 @@ echo "Detected EUI $GATEWAY_EUI from $GATEWAY_EUI_NIC"
 
 printf "       Host name [ttn-gateway]:"
 read NEW_HOSTNAME
-if [[ $NEW_HOSTNAME == "" ]]; then NEW_HOSTNAME="ttn-gateway"; fi
+if [[ $NEW_HOSTNAME == "" ]]; then NEW_HOSTNAME="ott-lora-gw1"; fi
 
 printf "       Latitude [0]: "
 read GATEWAY_LAT
-if [[ $GATEWAY_LAT == "" ]]; then GATEWAY_LAT=0; fi
+if [[ $GATEWAY_LAT == "" ]]; then GATEWAY_LAT="45.2984515"; fi
 
 printf "       Longitude [0]: "
 read GATEWAY_LON
-if [[ $GATEWAY_LON == "" ]]; then GATEWAY_LON=0; fi
+if [[ $GATEWAY_LON == "" ]]; then GATEWAY_LON="-75.9202896"; fi
 
 printf "       Altitude [0]: "
 read GATEWAY_ALT
